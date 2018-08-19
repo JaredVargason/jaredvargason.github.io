@@ -1,0 +1,18 @@
+--- 
+title: JV
+layout: default 
+---
+
+
+{% for category in site.categories %}
+    <div class="category-div">
+        <p class="category-heading">{{ category[0] }}</p> 
+        {% for post in category[1] %}
+        <a class="post-link" href=" {{ post.url }}">
+            <div class="post-div" style="background-image: url({{site.baseurl}}/static/img/{{post.imgtitle}})">
+                <p class="post-link">{{post.title}}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endfor %}

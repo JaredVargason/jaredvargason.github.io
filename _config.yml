@@ -1,0 +1,12 @@
+title: JV
+email: jaredvargason@gmail.com
+url: http://jaredvargason.com
+github_username: jaredvargason
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:title
