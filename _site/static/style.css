@@ -1,48 +1,33 @@
-@font-face {
-    font-family: typewriter;
-    src: url(typewcond_regular.otf);
-}
-
-@font-face {
-    font-family: typewriter-bold;
-    src: url(typewcond_bold.otf);
-    font-weight: bold; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    font-family: typewriter;
+    color: rgb(72, 72, 72);
+    font-family: "Roboto";
     font-size: 20px;
-}
-
-.catanify {
-   height: 100%;
-   z-index: -1; 
 }
 
 html {
     height:100%;
 }
 
-html, body, .catanify {
+html, body {
     margin:0%;
     height: 100%;
+    background-color: #dddddd;
 }
 
 .main-panel {
     margin: 0 auto; 
     width: 60%;
-    background-color: white;
+    background-color: #d5d5d5;
     height: 100%;
-    border-width: 0px 5px;
-    border-style: solid;
-    border-color: black;
     text-align: center;
 }
 
 .main-heading {
-    margin: 35px auto 30px;
-    font-size: 72px;
-    font-family: typewriter-bold;
+    padding: .25em;
+    font-size: 2em;
+
 }
 
 .header-link {

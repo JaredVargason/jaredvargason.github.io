@@ -1,12 +1,7 @@
-title: JV
+title: jaredvargason.com
 email: jaredvargason@gmail.com
 url: http://jaredvargason.com
 github_username: jaredvargason
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: /:title
+collections_dir: collections
+collections:
+  - projects
