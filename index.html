@@ -4,7 +4,7 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-3">
+  <div class="col-2">
     <div class="pt-3">
       Recent posts:
       <ul>
@@ -16,11 +16,40 @@ layout: default
       </ul>
     </div>
   </div>
-  <div class="offset-2 col-7">
+  <div class="offset-1 col">
     {% for post in site.posts limit:3 %}
-    <div>
-      {{ post.title }}
+    <div class="post row mt-3 pt-2">
+      <div class="col">
+        <div class="row">
+          <div class="col title">
+            {{ post.title }}
+          </div>
+          <div class="col date">
+            Written on {{ post.date}}
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          {{ post.content }}
+        </div>
+      </div>
     </div>
     {% endfor %}
   </div>
 </div>
+
+<style>
+.post {
+  border: 2px solid grey;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.date {
+  font-size: 14px;
+  text-align: right;
+}
+</style>

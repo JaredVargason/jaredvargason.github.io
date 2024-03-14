@@ -7,12 +7,37 @@ title: projects
   <h2>Projects</h2>
   {% for project in site.projects %}
   <div class="row project">
-      <div class="col-4">
-        {{ project.name }}
+    <div class="col">
+      <div class="row">
+        <div class="col title">
+          {{ project.name}}
+        </div>
       </div>
-      <div class="col-8">
-        {{ project.description }}
+      <div class="row">
+        <div class="col link">
+          <a href="{{ project.link }}">{{ project.link }}</a>
+        </div>
       </div>
+      <div class="row description">
+        <div class="col">
+          {{ project.description }}
+        </div>
+      </div>
+    </div>
   </div>
   {% endfor %}
 </div>
+
+<style>
+.title {
+  font-size: 20px;
+}
+
+.link {
+  font-size: 12px;
+}
+
+.description {
+  font-size: 16px;
+}
+</style>
