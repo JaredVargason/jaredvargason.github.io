@@ -3,41 +3,16 @@ title: jaredvargason.com
 layout: default 
 ---
 
-<div class="row">
-  <div class="col-2">
-    <div class="pt-3">
-      Recent posts:
-      <ul>
-        {% for post in site.posts limit:10 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+<div class="offset-3 col-6">
+  <div class="home">
+    <p>
+      Homepage of the Jared V. You'll find blog posts of some sort on this website, as well as projects I've worked on.
+    </p>
+    <p>
+      Whatever opinions you may find are my own.
+    </p>
   </div>
-  <div class="offset-1 col">
-    {% for post in site.posts limit:3 %}
-    <div class="post row mt-3 pt-2">
-      <div class="col">
-        <div class="row">
-          <div class="col title">
-            {{ post.title }}
-          </div>
-          <div class="col date">
-            Written on {{ post.date}}
-          </div>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col">
-          {{ post.content }}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+ </div>
 
 <style>
 .post {
