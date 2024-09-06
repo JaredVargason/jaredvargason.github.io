@@ -1,30 +1,50 @@
---- 
-title: jaredvargason.com 
-layout: default 
+---
+layout: default
+title: projects 
 ---
 
-<div class="offset-3 col-6">
-  <div class="home">
-    <p>
-      Homepage of the Jared V. You'll find blog posts of some sort on this website, as well as projects I've worked on.
-    </p>
-    <p>
-      Whatever opinions you may find are my own.
-    </p>
+<div class="offset-2 col-8 mt-5">
+  <h2>Projects</h2>
+  {% for project in site.projects %}
+  <a href="{{ project.link }}">
+  <div class="row project">
+    <div class="col">
+      <div class="row project-image">
+        
+      </div>
+      <div class="row">
+        <div class="col title">
+          {{ project.name }}
+        </div>
+      </div>
+      <div class="row description">
+        <div class="col">
+          {{ project.description }}
+        </div>
+      </div>
+    </div>
   </div>
- </div>
+  </a>
+  {% endfor %}
+</div>
 
 <style>
-.post {
-  border: 2px solid grey;
-}
 
 .title {
   font-size: 20px;
 }
 
-.date {
-  font-size: 14px;
-  text-align: right;
+.link {
+  font-size: 12px;
 }
+
+.description {
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 </style>
