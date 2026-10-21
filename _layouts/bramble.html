@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="bramble">
+  {% if page.url == "/bramble/" %}
+  <div class="bramble-header">
+    <img src="{{ site.baseurl }}/static/images/bramble.svg" alt="">
+    <div>
+      <div class="name">Bramble</div>
+      <div class="tagline">Markov Sequencer</div>
+    </div>
+  </div>
+  {% else %}
+  <a class="bramble-header small" href="{{ site.baseurl }}/bramble/">
+    <img src="{{ site.baseurl }}/static/images/bramble.svg" alt="">
+    <div class="name">Bramble: Markov Sequencer</div>
+  </a>
+  {% endif %}
+  {{ content }}
+</div>
