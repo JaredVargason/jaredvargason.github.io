@@ -20,18 +20,22 @@ own, and it never sends your songs or anything about how you use it to its devel
 <ul>
   <li><strong>Your songs</strong> are saved in Bramble's own storage on your phone. Uninstalling
     Bramble deletes them.</li>
+  <li><strong>Your kits:</strong> the sounds you import or record for them are kept the same way,
+    with the song files, and are deleted with them.</li>
   <li><strong>A few settings</strong>, such as whether you've taken the tour and which tips you've
     seen, are saved the same way.</li>
   <li><strong>Android backup.</strong> If backup is turned on in your phone's settings, Android may
-    include Bramble's songs and settings in your device backup, as it does for most apps. That
+    include Bramble's songs, kits, and settings in your device backup, as it does for most apps. That
     backup is made and stored by Google under your Google account and Google's privacy policy;
     Bramble's developer can't see it.</li>
 </ul>
 
 <h2>Files you export or import</h2>
-<p>When you export a song, audio, or a MIDI file, or import a song, you choose where it goes or
-where it comes from with Android's own file picker. Bramble reads or writes only that file. What
-happens to it after that (sharing it, uploading it) is up to you and the app you use.</p>
+<p>When you export a song, audio, a MIDI file, or a kit, or import a song, a kit, or sounds for a
+kit, you choose where it goes or where it comes from with Android's own file picker. Bramble reads
+or writes only that file. Sounds you add to a kit are copied into Bramble's own storage on your
+phone. What happens to an exported file after that (sharing it, uploading it) is up to you and the
+app you use.</p>
 
 <h2>MIDI devices</h2>
 <p>If you connect a MIDI device or app, Bramble sends it notes and clock so it can play along. This
@@ -65,6 +69,9 @@ counts on your phone how long you've played music, which goes nowhere.</p>
     screen off, with controls in the notification and on the lock screen.</li>
   <li><strong>Google Play billing, internet, and network state:</strong> used only by the Play
     Billing Library, for buying and restoring Bramble Pro.</li>
+  <li><strong>Microphone:</strong> to record a sound for one of your own kits, asked for only when
+    you first record one. Bramble listens only while you're recording, and keeps the recording on
+    your phone, in the kit; it's never sent anywhere.</li>
   <li><strong>Nearby devices (Bluetooth):</strong> to find and connect to Bluetooth MIDI devices,
     asked for only when you look for one. On Android 10 and 11, Android files Bluetooth scanning
     under <strong>location</strong>, so Bramble asks for that instead; it never reads your
